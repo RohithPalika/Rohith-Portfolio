@@ -268,53 +268,76 @@
 
       <div class="projects-grid">
 
-        <!-- Project 01 -->
-        <div class="project-card reveal reveal-d1">
-          <div class="project-number">Project / 01</div>
+        <!-- Project 01: Flagship AI PDF Generation System -->
+        <div class="project-card featured-project reveal reveal-d1">
+          <div class="project-header-top">
+            <div class="project-number">Project / 01 · Flagship</div>
+            <span class="project-status-badge">Production Architecture</span>
+          </div>
           <div class="project-title">AI-Powered Structured PDF Generation System</div>
           <div class="project-desc">
-            An end-to-end pipeline that uses Generative AI and LaTeX to automatically generate structured, formatted PDF documents at scale. Handles bulk batch processing via REST APIs, reducing manual documentation effort drastically.
+            An automated end-to-end pipeline connecting Generative AI and LaTeX compilers to generate structured, production-ready PDF documents at scale. Solved manual formatting bottlenecks and bulk batch processing latency across enterprise publishing workflows.
           </div>
+
+          <!-- Architecture & Engineering Breakdown -->
+          <div class="project-case-details">
+            <div class="case-item">
+              <span class="case-label">Problem</span>
+              <span class="case-val">Manual journal &amp; manuscript layout was labor-intensive, error-prone, and caused page layout breaks during bulk generation.</span>
+            </div>
+            <div class="case-item">
+              <span class="case-label">Architecture</span>
+              <span class="case-val">REST API Payload &rarr; GenAI Preprocessing &amp; Dynamic Schema Formatting &rarr; LaTeX Engine &rarr; PDF Artifact Validation.</span>
+            </div>
+            <div class="case-item">
+              <span class="case-label">Key Results</span>
+              <span class="case-val">75% reduction in compilation cycle time; resolved whitespace/blank page anomalies in high-volume batch runs.</span>
+            </div>
+          </div>
+
           <div class="project-tags">
             <span class="tag">Python</span>
             <span class="tag">Generative AI</span>
             <span class="tag">LaTeX</span>
             <span class="tag">REST APIs</span>
             <span class="tag">Pandas</span>
+            <span class="tag">Linux</span>
           </div>
-          <a href="https://github.com/RohithPalika" target="_blank" rel="noopener" class="project-link">
-            View on GitHub
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
-          </a>
+          <div class="project-footer-links">
+            <a href="https://github.com/RohithPalika" target="_blank" rel="noopener" class="project-link">
+              Repository &amp; Architecture
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+            </a>
+          </div>
         </div>
 
-        <!-- Project 02 -->
+        <!-- Project 02: Real-Time Face Recognition System -->
         <div class="project-card reveal reveal-d2">
-          <div class="project-number">Project / 02</div>
-          <div class="project-title">Automated Web &amp; Email Scraping Engine</div>
-          <div class="project-desc">
-            A robust Python scraping engine that crawls websites and extracts structured contact information from emails and web pages using BeautifulSoup and advanced regex patterns. Exports clean, structured data to CSV/Pandas DataFrames.
+          <div class="project-header-top">
+            <div class="project-number">Project / 02 · Computer Vision</div>
+            <span class="project-status-badge">Deep Learning</span>
           </div>
-          <div class="project-tags">
-            <span class="tag">Python</span>
-            <span class="tag">BeautifulSoup</span>
-            <span class="tag">RegEx</span>
-            <span class="tag">Pandas</span>
-            <span class="tag">Automation</span>
-          </div>
-          <a href="https://github.com/RohithPalika" target="_blank" rel="noopener" class="project-link">
-            View on GitHub
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
-          </a>
-        </div>
-
-        <!-- Project 03 -->
-        <div class="project-card reveal reveal-d3">
-          <div class="project-number">Project / 03</div>
           <div class="project-title">Real-Time Face Recognition System</div>
           <div class="project-desc">
-            A real-time face detection and recognition system using OpenCV, Convolutional Neural Networks (CNN), and FaceNet embeddings. Employs SVM classification for high-accuracy, multi-class face identification in live video streams.
+            A high-precision biometric vision pipeline integrating MTCNN face detection, deep 128-dimensional FaceNet feature embeddings, and multi-class SVM classification for real-time video stream recognition.
           </div>
+
+          <!-- Architecture & Engineering Breakdown -->
+          <div class="project-case-details">
+            <div class="case-item">
+              <span class="case-label">Detection vs. Rec</span>
+              <span class="case-val">Separates real-time bounding box extraction (OpenCV/MTCNN) from identity verification across multi-angle streams.</span>
+            </div>
+            <div class="case-item">
+              <span class="case-label">Pipeline</span>
+              <span class="case-val">Video Ingestion &rarr; Face Localization &rarr; 128-D Embedding Extraction &rarr; Linear SVM Decision Boundary.</span>
+            </div>
+            <div class="case-item">
+              <span class="case-label">Evaluation</span>
+              <span class="case-val">Calibrated confidence thresholds to drastically reduce false-positive rates under challenging lighting variations.</span>
+            </div>
+          </div>
+
           <div class="project-tags">
             <span class="tag">OpenCV</span>
             <span class="tag">CNN</span>
@@ -322,10 +345,54 @@
             <span class="tag">SVM</span>
             <span class="tag">Python</span>
           </div>
-          <a href="https://github.com/RohithPalika" target="_blank" rel="noopener" class="project-link">
-            View on GitHub
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
-          </a>
+          <div class="project-footer-links">
+            <a href="https://github.com/RohithPalika" target="_blank" rel="noopener" class="project-link">
+              View on GitHub
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 03: Automated Web & Email Scraping Engine -->
+        <div class="project-card reveal reveal-d3">
+          <div class="project-header-top">
+            <div class="project-number">Project / 03 · Automation</div>
+            <span class="project-status-badge">Data Engineering</span>
+          </div>
+          <div class="project-title">Automated Web &amp; Email Scraping Engine</div>
+          <div class="project-desc">
+            A resilient Python data harvesting system engineered to extract, sanitize, and validate structured contact information and metadata from diverse email dumps and heterogeneous web pages.
+          </div>
+
+          <!-- Architecture & Engineering Breakdown -->
+          <div class="project-case-details">
+            <div class="case-item">
+              <span class="case-label">Extraction</span>
+              <span class="case-val">Multi-pattern RegEx matching combined with DOM traversal for emails, phones, and institutional contact records.</span>
+            </div>
+            <div class="case-item">
+              <span class="case-label">Fault Tolerance</span>
+              <span class="case-val">Built-in exponential backoff, duplicate record hashing, and schema validation against corrupted/empty fields.</span>
+            </div>
+            <div class="case-item">
+              <span class="case-label">Pipeline Export</span>
+              <span class="case-val">Clean transformed batches streamed directly to Pandas DataFrames and indexed CSV datasets for analytics.</span>
+            </div>
+          </div>
+
+          <div class="project-tags">
+            <span class="tag">Python</span>
+            <span class="tag">BeautifulSoup</span>
+            <span class="tag">RegEx</span>
+            <span class="tag">Pandas</span>
+            <span class="tag">Data Pipelines</span>
+          </div>
+          <div class="project-footer-links">
+            <a href="https://github.com/RohithPalika" target="_blank" rel="noopener" class="project-link">
+              View on GitHub
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+            </a>
+          </div>
         </div>
 
       </div>
