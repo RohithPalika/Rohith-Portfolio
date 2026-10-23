@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rohith Palika — AI & ML Engineer</title>
+  <meta name="description" content="Rohith Palika — AI & ML Engineer specializing in Generative AI, Python Automation, Computer Vision, and Cloud MLOps. Based in Hyderabad, India." />
+  <meta name="keywords" content="Rohith Palika, AI Engineer, ML Engineer, Generative AI, Python, Automation, Portfolio" />
+  <meta property="og:title" content="Rohith Palika — AI & ML Engineer" />
+  <meta property="og:description" content="Portfolio of Rohith Palika — AI/ML Engineer building intelligent automation systems." />
+  <!-- Fonts: Playfair Display (Serif Display / TT Livret style), Syne, Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;0,800;0,900;1,700&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════════════════════
+       NAVIGATION
+  ════════════════════════════════════════════════════════════ -->
+  <nav id="navbar">
+    <div class="container">
+      <div class="nav-inner">
+        <a href="#hero" class="nav-logo">RP.</a>
+
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#certifications">Certifications</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <div style="display: flex; align-items: center; gap: 12px;">
+          <button class="theme-toggle-btn" id="theme-toggle" aria-label="Toggle Light/Dark Theme">
+            <span id="theme-toggle-icon">☀️</span>
+            <span id="theme-toggle-text">Light</span>
+          </button>
+          <a href="#contact" class="nav-hire-btn">Hire Me</a>
+        </div>
+
+        <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ═══════════════════════════════════════════════════════
+       HERO SECTION
+  ════════════════════════════════════════════════════════════ -->
+  <section id="hero">
+    <div class="container">
+      <div class="hero-canvas" id="hero-card">
+
+        <!-- 3D Neural Wireframe Mesh: Positioned behind titles, 100% clear of portrait -->
+        <canvas id="neural-3d-canvas" style="position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; z-index: 1; opacity: 1;"></canvas>
+
+        <!-- Top bar -->
+        <div class="hero-header">
+          <div class="hero-logo">RP.</div>
+          <div class="hero-status-pill">
+            <span class="status-dot"></span>
+            Available for Opportunities
+          </div>
+        </div>
+
+        <!-- Main copy -->
+        <div class="hero-body">
+          <p class="hero-subtitle">AI &amp; Machine Learning Engineer</p>
+          <h1 class="hero-name">Rohith<br>Palika</h1>
+          <p class="hero-role">Building Intelligent Automation</p>
+          <div class="hero-actions">
+            <a href="#contact" class="btn-primary" id="hero-hire-btn">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              Get In Touch
+            </a>
+            <a href="Rohith_Palika_Resume.pdf" download="Rohith_Palika_Resume.pdf" target="_blank" class="btn-outline" id="hero-resume-btn">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+              Download CV
+            </a>
+          </div>
+        </div>
+
+        <!-- Hero Portrait Image: Seamless transition from Natural B&W (Dark) to Full Color (Light) -->
+        <div class="hero-portrait">
+          <img src="rohith_color.jpg" alt="Rohith Palika Portrait" class="portrait-img" id="hero-portrait-img" />
+        </div>
+
+        <!-- Footer meta -->
+        <div class="hero-footer">
+          <div class="hero-meta">
+            <div>Pulsus Healthtech · B.Tech AI-ML</div>
+            <div>MLRITM, Hyderabad · 2026</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════════
+       ABOUT SECTION
+  ════════════════════════════════════════════════════════════ -->
+  <section id="about">
+    <div class="container">
+
+      <div class="section-header reveal">
+        <p class="section-label">01 — About Me</p>
+        <h2 class="section-title">Who I Am</h2>
+      </div>
+
+      <div class="about-grid">
+
+        <div class="about-text reveal reveal-d1">
+          <p>
+            I'm <strong>Rohith Palika</strong>, an AI & ML Engineer based in Hyderabad, India. I'm pursuing my B.Tech in Computer Science (AI-ML) at <strong>MLRITM</strong>, with a passion for building real-world intelligent systems that automate, scale, and solve meaningful problems.
+          </p>
+          <p>
+            Currently working as an <strong>AI Trainee at Pulsus Healthtech LLP</strong>, I build Generative AI-powered PDF workflows, automated email scraping pipelines, and bulk data processing systems using Python, AWS, and Linux environments.
+          </p>
+          <p>
+            Beyond engineering, I lead as the <strong>Public & Outreach Head at Club64</strong>, where I drive technical community engagement and event outreach across my college campus.
+          </p>
+
+          <div class="about-links" style="display: flex; gap: 12px; flex-wrap: wrap; margin-top: 24px;">
+            <a href="https://linkedin.com/in/rohithpalika" target="_blank" rel="noopener" class="btn-outline" style="padding: 10px 20px; font-size: 0.72rem;">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+              LinkedIn
+            </a>
+            <a href="https://github.com/RohithPalika" target="_blank" rel="noopener" class="btn-outline" style="padding: 10px 20px; font-size: 0.72rem;">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>
+              GitHub
+            </a>
+            <a href="Rohith_Palika_Resume.pdf" download="Rohith_Palika_Resume.pdf" target="_blank" class="btn-primary" style="padding: 10px 20px; font-size: 0.72rem;">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+              Download Resume
+            </a>
+          </div>
+        </div>
+
+        <div class="about-stats reveal reveal-d2">
+          <div class="stat-box">
+            <div class="stat-number">Ongoing</div>
+            <div class="stat-label">Industry Experience (Fresher)</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-number">3+</div>
+            <div class="stat-label">Production Projects</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-number">8</div>
+            <div class="stat-label">Certifications</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-number">7.72</div>
+            <div class="stat-label">GPA — B.Tech CSAI-ML</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════════
+       EXPERIENCE SECTION
+  ════════════════════════════════════════════════════════════ -->
+  <section id="experience">
+    <div class="container">
+
+      <div class="section-header reveal">
+        <p class="section-label">02 — Work Experience</p>
+        <h2 class="section-title">Where I've Worked</h2>
+      </div>
+
+      <div class="experience-list">
+
+        <!-- Pulsus Healthtech -->
+        <div class="exp-card reveal reveal-d1">
+          <div class="exp-left">
+            <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 6px;">
+              <div class="company-logo-badge" style="width: 36px; height: 36px; border-radius: 8px; background: rgba(255,255,255,0.06); border: 1px solid var(--border); display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+              </div>
+              <div>
+                <div class="exp-role" style="margin-bottom: 0;">AI Trainee</div>
+                <div class="exp-company" style="margin-bottom: 0;">Pulsus Healthtech LLP · Hyderabad, India</div>
+              </div>
+            </div>
+            <ul class="exp-bullets" style="margin-top: 14px;">
+              <li>Contributing to AI-driven solutions using Python, Generative AI, APIs, and data-processing technologies.</li>
+              <li>Working on automated PDF generation workflows involving journal and manuscript-related content.</li>
+              <li>Developing email scraping and email-processing workflows for extracting and processing relevant information.</li>
+              <li>Troubleshooting PDF layout issues including unwanted blank pages, excessive whitespace, and template formatting.</li>
+              <li>Integrating APIs and contributing to bulk processing workflows for high-volume operational requirements with Pandas, NumPy, RegEx, LaTeX, AWS, and Linux.</li>
+            </ul>
+          </div>
+          <div class="exp-meta">
+            <div class="exp-date">Jul 2026 — Present</div>
+            <span class="exp-type-badge">Industry</span>
+          </div>
+        </div>
+
+        <!-- Pantech e Learning -->
+        <div class="exp-card reveal reveal-d2">
+          <div class="exp-left">
+            <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 6px;">
+              <div class="company-logo-badge" style="width: 36px; height: 36px; border-radius: 8px; background: rgba(255,255,255,0.06); border: 1px solid var(--border); display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/></svg>
+              </div>
+              <div>
+                <div class="exp-role" style="margin-bottom: 0;">Amazon Web Services (MLOps)</div>
+                <div class="exp-company" style="margin-bottom: 0;">Pantech e Learning · Hyderabad, India</div>
+              </div>
+            </div>
+            <ul class="exp-bullets" style="margin-top: 14px;">
+              <li>Gained hands-on AWS and MLOps experience through ML model development and scalable workflows.</li>
+              <li>Applied production-oriented MLOps practices, model monitoring, and cloud deployment pipelines.</li>
+            </ul>
+          </div>
+          <div class="exp-meta">
+            <div class="exp-date">Mar 2024 — Apr 2024</div>
+            <span class="exp-type-badge">Traineeship</span>
+          </div>
+        </div>
+
+        <!-- Club64 Leadership -->
+        <div class="exp-card reveal reveal-d3">
+          <div class="exp-left">
+            <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 6px;">
+              <div class="company-logo-badge" style="width: 36px; height: 36px; border-radius: 8px; background: rgba(255,255,255,0.06); border: 1px solid var(--border); display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+              </div>
+              <div>
+                <div class="exp-role" style="margin-bottom: 0;">Public and Outreach Head</div>
+                <div class="exp-company" style="margin-bottom: 0;">Club64 · MLRITM, Hyderabad</div>
+              </div>
+            </div>
+            <ul class="exp-bullets" style="margin-top: 14px;">
+              <li>Hosted formal and informal sessions, acted as MC, and led on-stage event coordination and outreach.</li>
+              <li>Supported club visibility, audience engagement, and spearheaded campus-wide technical event management.</li>
+            </ul>
+          </div>
+          <div class="exp-meta">
+            <div class="exp-date">2023 — 2026</div>
+            <span class="exp-type-badge">Leadership</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════════
+       PROJECTS SECTION
+  ════════════════════════════════════════════════════════════ -->
+  <section id="projects">
+    <div class="container">
+
+      <div class="section-header reveal">
+        <p class="section-label">03 — Selected Work</p>
+        <h2 class="section-title">Projects</h2>
+      </div>
+
+      <div class="projects-grid">
+
+        <!-- Project 01 -->
+        <div class="project-card reveal reveal-d1">
+          <div class="project-number">Project / 01</div>
+          <div class="project-title">AI-Powered Structured PDF Generation System</div>
+          <div class="project-desc">
+            An end-to-end pipeline that uses Generative AI and LaTeX to automatically generate structured, formatted PDF documents at scale. Handles bulk batch processing via REST APIs, reducing manual documentation effort drastically.
+          </div>
+          <div class="project-tags">
+            <span class="tag">Python</span>
+            <span class="tag">Generative AI</span>
+            <span class="tag">LaTeX</span>
+            <span class="tag">REST APIs</span>
+            <span class="tag">Pandas</span>
+          </div>
+          <a href="https://github.com/RohithPalika" target="_blank" rel="noopener" class="project-link">
+            View on GitHub
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+          </a>
+        </div>
+
+        <!-- Project 02 -->
+        <div class="project-card reveal reveal-d2">
+          <div class="project-number">Project / 02</div>
+          <div class="project-title">Automated Web &amp; Email Scraping Engine</div>
+          <div class="project-desc">
+            A robust Python scraping engine that crawls websites and extracts structured contact information from emails and web pages using BeautifulSoup and advanced regex patterns. Exports clean, structured data to CSV/Pandas DataFrames.
+          </div>
+          <div class="project-tags">
+            <span class="tag">Python</span>
+            <span class="tag">BeautifulSoup</span>
+            <span class="tag">RegEx</span>
+            <span class="tag">Pandas</span>
+            <span class="tag">Automation</span>
+          </div>
+          <a href="https://github.com/RohithPalika" target="_blank" rel="noopener" class="project-link">
+            View on GitHub
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+          </a>
+        </div>
+
+        <!-- Project 03 -->
+        <div class="project-card reveal reveal-d3">
+          <div class="project-number">Project / 03</div>
+          <div class="project-title">Real-Time Face Recognition System</div>
+          <div class="project-desc">
+            A real-time face detection and recognition system using OpenCV, Convolutional Neural Networks (CNN), and FaceNet embeddings. Employs SVM classification for high-accuracy, multi-class face identification in live video streams.
+          </div>
+          <div class="project-tags">
+            <span class="tag">OpenCV</span>
+            <span class="tag">CNN</span>
+            <span class="tag">FaceNet</span>
+            <span class="tag">SVM</span>
+            <span class="tag">Python</span>
+          </div>
+          <a href="https://github.com/RohithPalika" target="_blank" rel="noopener" class="project-link">
+            View on GitHub
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════════
+       SKILLS SECTION
+  ════════════════════════════════════════════════════════════ -->
+  <section id="skills">
+    <div class="container">
+
+      <div class="section-header reveal">
+        <p class="section-label">04 — Technical Skills</p>
+        <h2 class="section-title">Stack &amp; Tools</h2>
+      </div>
+
+      <div class="skills-grid">
+
+        <div class="skill-group reveal reveal-d1">
+          <div class="skill-group-label">AI / ML</div>
+          <div class="skill-chips">
+            <span class="skill-chip"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a10 10 0 1 0 10 10H12V2z"/></svg> Generative AI</span>
+            <span class="skill-chip"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg> OpenCV</span>
+            <span class="skill-chip">CNN</span>
+            <span class="skill-chip">FaceNet</span>
+            <span class="skill-chip">SVM</span>
+            <span class="skill-chip">Deep Learning</span>
+          </div>
+        </div>
+
+        <div class="skill-group reveal reveal-d2">
+          <div class="skill-group-label">Programming</div>
+          <div class="skill-chips">
+            <span class="skill-chip"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg> Python</span>
+            <span class="skill-chip">Java (Basic)</span>
+            <span class="skill-chip"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg> SQL</span>
+            <span class="skill-chip">LaTeX</span>
+            <span class="skill-chip">HTML5 / CSS3</span>
+            <span class="skill-chip">JavaScript</span>
+          </div>
+        </div>
+
+        <div class="skill-group reveal reveal-d3">
+          <div class="skill-group-label">Cloud, CRM &amp; Tools</div>
+          <div class="skill-chips">
+            <span class="skill-chip"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/></svg> AWS</span>
+            <span class="skill-chip"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/></svg> Salesforce</span>
+            <span class="skill-chip"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg> ServiceNow</span>
+            <span class="skill-chip">MLOps</span>
+            <span class="skill-chip">Linux</span>
+            <span class="skill-chip">Git / GitHub</span>
+          </div>
+        </div>
+
+        <div class="skill-group reveal reveal-d4">
+          <div class="skill-group-label">Data &amp; APIs</div>
+          <div class="skill-chips">
+            <span class="skill-chip">Pandas</span>
+            <span class="skill-chip">NumPy</span>
+            <span class="skill-chip"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg> REST APIs</span>
+            <span class="skill-chip">BeautifulSoup</span>
+            <span class="skill-chip">MySQL</span>
+            <span class="skill-chip">Supabase</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════════
+       CERTIFICATIONS SECTION
+  ════════════════════════════════════════════════════════════ -->
+  <section id="certifications">
+    <div class="container">
+
+      <div class="section-header reveal">
+        <p class="section-label">05 — Credentials</p>
+        <h2 class="section-title">Certifications</h2>
+      </div>
+
+      <div class="certs-grid">
+
+        <!-- HIGHLIGHT: Certified System Administrator – ServiceNow -->
+        <a href="https://drive.google.com/file/d/1qSCfqlBzeDBJlUOYxskxL2hjkk_i7YVv/view?usp=sharing" target="_blank" rel="noopener" class="cert-card featured reveal reveal-d1" title="View ServiceNow CSA Certificate">
+          <div class="cert-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+          </div>
+          <div style="flex: 1;">
+            <div class="cert-name">Certified System Administrator</div>
+            <div class="cert-issuer">ServiceNow</div>
+            <span class="cert-badge-tag">Featured · Official Credential</span>
+          </div>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color: var(--text-muted);"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+        </a>
+
+        <!-- HIGHLIGHT: ServiceNow – Micro Certification -->
+        <a href="https://drive.google.com/file/d/14DeiBeVgRsZvGYmNeMM3bGbkE-K_nbtS/view?usp=sharing" target="_blank" rel="noopener" class="cert-card featured reveal reveal-d1" title="View ServiceNow Micro Certificate">
+          <div class="cert-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+          </div>
+          <div style="flex: 1;">
+            <div class="cert-name">ServiceNow — Micro Certification</div>
+            <div class="cert-issuer">ServiceNow Now Learning</div>
+            <span class="cert-badge-tag">Featured · Micro Credential</span>
+          </div>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color: var(--text-muted);"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+        </a>
+
+
+
+        <!-- Deep Learning – CITD, MSME -->
+        <a href="https://drive.google.com/file/d/1I6HzL4sXBH1uuaWD8F0m6IzNXWw6ho4N/view?usp=sharing" target="_blank" rel="noopener" class="cert-card reveal reveal-d2" title="View Deep Learning CITD Certificate">
+          <div class="cert-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>
+          </div>
+          <div style="flex: 1;">
+            <div class="cert-name">Deep Learning</div>
+            <div class="cert-issuer">CITD, MSME · Govt of India</div>
+          </div>
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color: var(--text-muted);"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+        </a>
+
+        <!-- Job Simulation – AWS, Walmart, Accenture -->
+        <a href="https://drive.google.com/file/d/1O7Cq1OMukpCiv3T0zUNusRt6p1Bc-pni/view?usp=sharing" target="_blank" rel="noopener" class="cert-card reveal reveal-d2" title="View Job Simulation Certificate">
+          <div class="cert-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/></svg>
+          </div>
+          <div style="flex: 1;">
+            <div class="cert-name">Job Simulation</div>
+            <div class="cert-issuer">AWS · Walmart · Accenture</div>
+          </div>
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color: var(--text-muted);"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+        </a>
+
+        <!-- Data Analytics Simulation – Deloitte, Tata, Accenture -->
+        <a href="https://drive.google.com/file/d/1CE5c5aN6aRc26h6oGPiGG5nx13Tyr4yz/view?usp=sharing" target="_blank" rel="noopener" class="cert-card reveal reveal-d2" title="View Data Analytics Simulation Certificate">
+          <div class="cert-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+          </div>
+          <div style="flex: 1;">
+            <div class="cert-name">Data Analytics Simulation</div>
+            <div class="cert-issuer">Deloitte · Tata · Accenture</div>
+          </div>
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color: var(--text-muted);"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+        </a>
+
+        <!-- Gen AI Simulation – BCGx -->
+        <a href="https://drive.google.com/file/d/19I28uIGbnNCuDyIl6MK0svhK93rX6KMP/view?usp=sharing" target="_blank" rel="noopener" class="cert-card reveal reveal-d3" title="View Gen AI Simulation Certificate">
+          <div class="cert-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a10 10 0 1 0 10 10H12V2z"/></svg>
+          </div>
+          <div style="flex: 1;">
+            <div class="cert-name">Gen AI Simulation</div>
+            <div class="cert-issuer">BCGx</div>
+          </div>
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color: var(--text-muted);"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+        </a>
+
+        <!-- Java, Python, SQL – HackerRank -->
+        <a href="https://drive.google.com/file/d/1cFYhoF_J96oHZF8V0JhGe4TddIxtBe89/view?usp=sharing" target="_blank" rel="noopener" class="cert-card reveal reveal-d3" title="View HackerRank Verified Certificate">
+          <div class="cert-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          </div>
+          <div style="flex: 1;">
+            <div class="cert-name">Java, Python, SQL</div>
+            <div class="cert-issuer">HackerRank Verified</div>
+          </div>
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color: var(--text-muted);"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+        </a>
+
+        <!-- Python – Infosys Springboard -->
+        <a href="https://drive.google.com/file/d/1ASc32iK_gEp82QGpJYob2W64pPVJKjhG/view?usp=sharing" target="_blank" rel="noopener" class="cert-card reveal reveal-d3" title="View Infosys Springboard Certificate">
+          <div class="cert-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+          </div>
+          <div style="flex: 1;">
+            <div class="cert-name">Python</div>
+            <div class="cert-issuer">Infosys Springboard</div>
+          </div>
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color: var(--text-muted);"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════════
+       CONTACT SECTION
+  ════════════════════════════════════════════════════════════ -->
+  <section id="contact">
+    <div class="container">
+
+      <div class="contact-canvas reveal">
+        <div class="contact-inner">
+
+          <!-- Left: Info -->
+          <div class="contact-left">
+            <h2 class="contact-heading">Let's<br>Build<br>Together</h2>
+            <p class="contact-sub">
+              Open to full-time roles, freelance projects, and exciting collaborations in AI, ML, and automation. Let's create something intelligent.
+            </p>
+
+            <div class="contact-links">
+              <a href="mailto:rohithpalika01@gmail.com" class="contact-link-item" id="contact-email-link">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                rohithpalika01@gmail.com
+              </a>
+              <a href="tel:+919985533774" class="contact-link-item" id="contact-phone-link">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10a19.79 19.79 0 01-3.07-8.67A2 2 0 012 .18l3-.01a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92v2z"/></svg>
+                +91 99855 33774
+              </a>
+              <a href="https://linkedin.com/in/rohithpalika" target="_blank" rel="noopener" class="contact-link-item" id="contact-linkedin-link">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                linkedin.com/in/rohithpalika
+              </a>
+              <a href="https://github.com/RohithPalika" target="_blank" rel="noopener" class="contact-link-item" id="contact-github-link">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>
+                github.com/RohithPalika
+              </a>
+            </div>
+
+            <button class="copy-email-btn" id="copy-email-btn" style="margin-top: 20px;">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"/></svg>
+              Copy Email
+            </button>
+          </div>
+
+          <!-- Right: Form -->
+          <form class="contact-form" id="contact-form">
+            <div class="form-group">
+              <label for="contact-name">Your Name</label>
+              <input type="text" id="contact-name" name="name" placeholder="John Doe" required />
+            </div>
+            <div class="form-group">
+              <label for="contact-email">Your Email</label>
+              <input type="email" id="contact-email" name="email" placeholder="john@example.com" required />
+            </div>
+            <div class="form-group">
+              <label for="contact-subject">Subject</label>
+              <input type="text" id="contact-subject" name="subject" placeholder="Project / Job Opportunity" />
+            </div>
+            <div class="form-group">
+              <label for="contact-message">Message</label>
+              <textarea id="contact-message" name="message" placeholder="Tell me about your project or opportunity..." required></textarea>
+            </div>
+            <button type="submit" class="btn-primary" id="contact-submit-btn" style="align-self: flex-start;">
+              Send Message
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+            </button>
+          </form>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════════
+       FOOTER
+  ════════════════════════════════════════════════════════════ -->
+  <footer>
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-logo">RP.</div>
+        <div class="footer-copy">© 2026 Rohith Palika · AI & ML Engineer · Hyderabad</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

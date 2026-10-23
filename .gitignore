@@ -1,0 +1,4 @@
+# Temporary backups
+*.backup
+.DS_Store
+Thumbs.db
