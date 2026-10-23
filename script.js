@@ -124,24 +124,30 @@ if (copyBtn) {
   });
 }
 
-// ── Contact form submit ───────────────────────────────────────
+// ── Contact form submit (Direct Email Dispatch Fallback) ──────
 const contactForm = document.getElementById('contact-form');
 if (contactForm) {
   contactForm.addEventListener('submit', e => {
     e.preventDefault();
+    const name = encodeURIComponent(document.getElementById('contact-name').value.trim());
+    const email = encodeURIComponent(document.getElementById('contact-email').value.trim());
+    const subject = encodeURIComponent(document.getElementById('contact-subject').value.trim() || 'Portfolio Inquiry');
+    const message = encodeURIComponent(document.getElementById('contact-message').value.trim());
+
     const btn = contactForm.querySelector('button[type="submit"]');
-    const original = btn.textContent;
-    btn.textContent = 'Message Sent ✓';
-    btn.style.background = 'transparent';
-    btn.style.color = '#4ade80';
+    const originalText = btn.innerHTML;
+    btn.textContent = 'Opening Mail Client...';
     btn.style.borderColor = '#4ade80';
+
+    // Construct genuine mailto link
+    const mailtoUrl = `mailto:rohithpalika01@gmail.com?subject=${subject}&body=From:%20${name}%20(${email})%0D%0A%0D%0A${message}`;
+    window.location.href = mailtoUrl;
+
     setTimeout(() => {
-      btn.textContent = original;
-      btn.style.background = '';
-      btn.style.color = '';
+      btn.innerHTML = originalText;
       btn.style.borderColor = '';
       contactForm.reset();
-    }, 3000);
+    }, 2500);
   });
 }
 
